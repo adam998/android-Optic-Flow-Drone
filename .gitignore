@@ -1,34 +1,62 @@
-# Gradle files
-.gradle/
-build/
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
 
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
+.vscode/
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
 
-# Keystore files
-*.jks
-*.keystore
+# --- Logs / temp ---
+*.log
+tmp/
+temp/
+.cache/
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
 
-# Android Profiling
-*.hprof
+# --- Android / Gradle ---
+.gradle/
+local.properties
+**/build/
+captures/
+*.apk
+*.aab
+
+# --- C/C++ / CMake / Ninja ---
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+compile_commands.json
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+
+# --- PX4 / simulation generated outputs (common) ---
+build/
+dist/
+logs/
+log/
+*.ulg
+
+# --- Gazebo / sim local outputs inside repo (if created) ---
+sim/output/
+sim/logs/
+
+# --- Datasets (generated/raw large files should stay out of git) ---
+datasets/raw/
+datasets/processed/
+datasets/cache/
+
+# Keep docs and placeholders tracked
+!docs/**
